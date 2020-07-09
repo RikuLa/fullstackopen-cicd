@@ -19,9 +19,6 @@ jobs:
       - name: test
         run: |
           npm run test
-      - name: build
-        run: |
-          npm run rakenna
       - uses: akhileshns/heroku-deploy@v3.2.6
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
